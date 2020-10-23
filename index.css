@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0px;
 }
 .headerCont {
   display: flex;
@@ -18,7 +19,27 @@
   padding: 10px;
   flex: 90%;
 }
-
+.bodyCont{
+  background-color: rgb(209, 203, 203);
+  /* min-height: 400px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.bodyCont > div {
+  background-color: #f1f1f1;
+  width: 400px;
+  height: 400px;
+  order: 3;
+  /* line-height: 75px; */
+  margin: 5px;
+  /* text-align: center; */
+  /* font-size: 30px; */
+}
+.footerCont{
+  background-color: rgb(209, 203, 203);
+  min-height: 200px;
+}
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
   .flex-item-right, .flex-item-left {
